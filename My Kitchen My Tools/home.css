@@ -1,0 +1,69 @@
+/* 全局样式 */
+.home-section {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    background-image: url('uploads/BackgroundPhoto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Logo样式 */
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* 标题容器 */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /* 垂直排列标题和按钮 */
+    height: 80vh;
+    text-align: center;
+    color: white;
+}
+
+/* 主标题样式 */
+.title h1 {
+    font-size: 64px;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* 按钮样式 */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;  /* 增加按钮与标题的距离 */
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #f4b400;
+}
+
+/* 背景图片样式 */
+.backgroundpng {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

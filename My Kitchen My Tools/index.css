@@ -1,0 +1,356 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Home Section */
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.home-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-home {
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Renamed class to 'home-title' */
+.home-title {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Renamed button class to 'home-btn' */
+.home-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #f4b400;
+    transform: scale(1.05);
+}
+
+/* Header 样式 */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: 30px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.nav-bar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #f4b400;
+    transform: scale(1.1);
+}
+
+.findme a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 30px;
+}
+
+.findme a:hover {
+    background-color: #f4b400;
+}
+
+/* 首页标题容器和按钮样式 */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.title h1 {
+    font-size: 64px;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #f4b400;
+}
+
+/* 类别栏样式 */
+.category-bar-wrapper {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.category-bar {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.category-item {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    margin: 5px;
+}
+
+.category-item:hover {
+    background-color: #ffffff;
+    color: #f4b400;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 产品展示区样式 */
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-label-top {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.product-label-new {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.product-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.product-company {
+    font-size: 14px;
+    color: #000000;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.load-more-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+/* Footer 样式 */
+footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-section {
+    min-width: 200px;
+    margin: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #f4b400;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    .products-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .findme {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-section {
+        grid-template-columns: 1fr;
+    }
+}
